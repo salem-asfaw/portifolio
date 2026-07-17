@@ -67,7 +67,7 @@ export default function Contact() {
         setStatus(data.message || "Something went wrong ❌");
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       setStatus("Server error ❌");
     }
 
