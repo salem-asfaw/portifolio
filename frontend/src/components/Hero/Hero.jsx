@@ -76,10 +76,10 @@ export default function Hero() {
           <div className={styles.imageFrame}>
 
             {/* Put your image later here */}
-            <img 
-              src="../../../public/img/salem.png"
-              alt="Salem Asfaw"
-            />
+           <img
+  src="/img/salem.png"
+  alt="Salem Asfaw"
+/>
 
           </div>
 
