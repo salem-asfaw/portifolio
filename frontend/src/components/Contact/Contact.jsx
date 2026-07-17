@@ -38,43 +38,50 @@ export default function Contact() {
 
 
   async function handleSubmit(e) {
-    e.preventDefault();
-    setLoading(true);
-    setStatus("");
-    try {
-      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
-      const response = await fetch(
-        `${API_URL}/api/contact`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(formData)
-        }
-      );
+  e.preventDefault();
 
-      const data = await response.json();
+  setLoading(true);
+  setStatus("");
 
-      if (data.success) {
-        setStatus("Message sent successfully 🚀");
-        setFormData({
-          name: "",
-          email: "",
-          message: ""
-        });
-      } else {
-        setStatus(data.message || "Something went wrong ❌");
+  try {
+    const API_URL =
+      import.meta.env.VITE_API_URL ||
+      "https://portifolio-9a5z.onrender.com";
+
+    const response = await fetch(
+      `${API_URL}/api/contact`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       }
-    } catch (error) {
-      // console.log(error);
-      setStatus("Server error ❌");
+    );
+
+    const data = await response.json();
+
+    if (data.success) {
+      setStatus("Message sent successfully 🚀");
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      setStatus(data.message || "Something went wrong ❌");
     }
 
-    finally {
-      setLoading(false);
-    }
+  } catch (error) {
+    console.error(error);
+    setStatus("Server error ❌");
   }
+
+  finally {
+    setLoading(false);
+  }
+}
 
 
   return (
