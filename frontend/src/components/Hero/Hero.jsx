@@ -77,7 +77,7 @@ export default function Hero() {
 
             {/* Put your image later here */}
             <img 
-              src="../../../dist/img/salem.png"
+              src="../../../public/img/salem.png"
               alt="Salem Asfaw"
             />
 
