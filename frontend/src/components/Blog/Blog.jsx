@@ -19,7 +19,7 @@ export default function Blog() {
           </div>
           <div className={styles.imageBox}>
             <img
-              src="../../../dist/img/salem3.png"
+              src="../../../public/img/salem3.png"
               alt="My coding journey"
             />
           </div>

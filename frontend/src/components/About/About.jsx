@@ -14,7 +14,7 @@ export default function About() {
         {/* IMAGE */}
         <div className={styles.imageBox}>
           <img
-            src="../../../dist/img/image.png"
+            src="../../../public/img/image.png"
             alt="Salem Asfaw"
           />
         </div>
