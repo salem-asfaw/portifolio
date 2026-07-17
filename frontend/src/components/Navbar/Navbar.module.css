@@ -1,0 +1,347 @@
+.navbar {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 80px;
+
+  padding: 0 8%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  z-index: 1000;
+
+  background: rgba(0,0,0,0.25);
+
+  backdrop-filter: blur(15px);
+
+  transition: 0.4s ease;
+
+}
+
+
+
+/* LOGO */
+
+.logo {
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  color: white;
+
+  cursor: pointer;
+
+}
+
+
+
+/* NAV LINKS */
+
+.navLinks {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 35px;
+
+  list-style: none;
+
+}
+
+
+
+.navLinks li {
+
+  list-style: none;
+
+}
+
+
+
+.navLinks a {
+
+  position: relative;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+/* HOVER COLOR */
+
+.navLinks a:hover {
+
+  color: #2563eb;
+
+}
+
+
+
+/* UNDERLINE ANIMATION */
+
+.navLinks a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -8px;
+
+  width: 0;
+
+  height: 3px;
+
+  background: #2563eb;
+
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+.navLinks a:hover::after {
+
+  width: 100%;
+
+}
+
+
+
+/* ACTIVE SECTION */
+
+.activeLink {
+
+  color: #2563eb !important;
+
+}
+
+
+
+.activeLink::after {
+
+  width: 100% !important;
+
+}
+
+
+
+
+
+/* BUTTON AREA */
+
+.actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+}
+
+
+
+/* DARK MODE BUTTON */
+
+.themeButton {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: transparent;
+
+  border: 1px solid white;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+.themeButton:hover {
+
+  background: #2563eb;
+
+  transform: rotate(15deg);
+
+}
+
+
+
+
+
+/* MOBILE MENU BUTTON */
+
+.menuButton {
+
+  display: none;
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: transparent;
+
+  border: 1px solid white;
+
+  color: white;
+
+  cursor: pointer;
+
+}
+
+
+
+
+
+/* AFTER SCROLL */
+
+.scrolled {
+
+  background: var(--color-bg);
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* Change colors after scroll */
+
+.scrolled .logo {
+
+  color: var(--color-text);
+
+}
+
+
+
+.scrolled .navLinks a {
+
+  color: var(--color-text);
+
+}
+
+
+
+.scrolled .themeButton {
+
+  color: var(--color-text);
+
+  border-color: var(--color-text);
+
+}
+
+
+
+.scrolled .menuButton {
+
+  color: var(--color-text);
+
+  border-color: var(--color-text);
+
+}
+
+
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:900px){
+
+
+  .navLinks {
+
+    position: absolute;
+
+    top: 80px;
+
+    right: 0;
+
+    width: 250px;
+
+    padding: 30px;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    background: var(--color-bg);
+
+    transform: translateX(100%);
+
+    transition: 0.4s ease;
+
+  }
+
+
+
+  .navLinks.active {
+
+    transform: translateX(0);
+
+  }
+
+
+
+  .navLinks a {
+
+    color: var(--color-text);
+
+  }
+
+
+
+  .menuButton {
+
+    display: flex;
+
+  }
+
+
+}

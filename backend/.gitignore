@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Environment variables (contains Gmail password)
+.env
+
+# Logs
+*.log
+
+# System files
+.DS_Store
