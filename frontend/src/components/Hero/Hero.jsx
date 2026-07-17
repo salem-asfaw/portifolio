@@ -76,7 +76,8 @@ export default function Hero() {
           <div className={styles.imageFrame}>
 
             {/* Put your image later here */}
-           <img
+   
+              <img
   src="/img/salem.png"
   alt="Salem Asfaw"
 />

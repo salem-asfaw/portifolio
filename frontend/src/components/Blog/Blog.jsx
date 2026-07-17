@@ -18,7 +18,7 @@ export default function Blog() {
             </p>
           </div>
           <div className={styles.imageBox}>
-   <img
+       <img
   src="/img/salem3.png"
   alt="Salem Asfaw"
 />

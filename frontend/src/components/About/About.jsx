@@ -13,7 +13,8 @@ export default function About() {
       <div className={styles.container}>
         {/* IMAGE */}
         <div className={styles.imageBox}>
-          <img
+   
+             <img
   src="/img/chatpng.png"
   alt="Salem Asfaw"
 />
