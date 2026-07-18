@@ -13,18 +13,29 @@ export default function SpecialThanks() {
 
           {/* IMAGE */}
           <div className={styles.imageBox}>
+
             <img
               src="/img/yosef2.png"
-              alt="Yosef"
+              alt="Yosef Mekonen Tesfay"
             />
 
             <h3>
-             Mr  Yosef  Mekonen
+              Mr Yosef Mekonen Tesfay
             </h3>
 
             <p>
               My Uncle & Biggest Supporter
             </p>
+
+
+            <a
+              href="https://www.linkedin.com/in/yomeko/?skipRedirect=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn Profile
+            </a>
+
           </div>
 
 
@@ -33,10 +44,11 @@ export default function SpecialThanks() {
 
             <p>
               I would like to express my sincere gratitude to my uncle,
-              <strong> Yosef Mekonen</strong>, for believing in me and supporting my journey.
+              <strong> Yosef Mekonen Tesfay</strong>, for believing in me and supporting my journey.
               Thank you for your time, encouragement, dedication, and the
               opportunities you've given me to learn and grow.
             </p>
+
 
             <p>
               Your unwavering support has inspired me to keep learning,
@@ -49,6 +61,7 @@ export default function SpecialThanks() {
               "Behind every successful journey is someone who believed
               in you before you believed in yourself."
             </blockquote>
+
 
           </div>
 

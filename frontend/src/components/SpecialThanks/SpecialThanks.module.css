@@ -65,47 +65,108 @@
 }
 
 
+/* LINKEDIN BUTTON */
+
+.imageBox a {
+
+  display:inline-block;
+  margin-top:15px;
+
+  padding:10px 25px;
+
+  border-radius:25px;
+
+  background:var(--color-primary);
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:16px;
+
+  transition:.3s ease;
+
+}
+
+
+.imageBox a:hover {
+
+  transform:translateY(-3px);
+
+  opacity:.85;
+
+}
+
+
 
 /* CARD */
 
 .card {
+
   flex:1;
+
   background:var(--color-surface);
+
   padding:40px;
+
   border-radius:30px;
+
   border:1px solid var(--color-border);
+
   transition:.4s ease;
+
 }
+
 
 
 .card:hover {
+
   transform:translateY(-8px);
+
   box-shadow:var(--shadow);
+
 }
+
 
 
 
 .card p {
+
   color:var(--color-muted);
+
   font-size:18px;
+
   line-height:1.9;
+
   margin-bottom:25px;
+
 }
+
 
 
 .card strong {
+
   color:var(--color-primary);
+
 }
+
 
 
 
 blockquote {
+
   border-left:4px solid var(--color-primary);
+
   padding-left:20px;
+
   margin-top:30px;
+
   font-style:italic;
+
   color:var(--color-text);
+
   line-height:1.7;
+
 }
 
 
@@ -115,35 +176,64 @@ blockquote {
 
 @media(max-width:900px){
 
+
   .specialThanks {
+
     padding:60px 0;
+
   }
+
 
 
   .content {
+
     flex-direction:column;
+
     gap:40px;
+
   }
+
 
 
   .imageBox img {
+
     width:280px;
+
     height:280px;
+
   }
+
 
 
   .container h2 {
+
     font-size:40px;
+
   }
+
+
+
+  .imageBox h3 {
+
+    font-size:24px;
+
+  }
+
 
 
   .card {
+
     padding:30px;
+
   }
+
 
 
   .card p {
+
     font-size:16px;
+
   }
+
 
 }
