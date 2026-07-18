@@ -14,7 +14,7 @@ export default function SpecialThanks() {
           {/* IMAGE */}
           <div className={styles.imageBox}>
             <img
-              src="/img/yosef.png"
+              src="/img/yosef2.png"
               alt="Yosef"
             />
 
