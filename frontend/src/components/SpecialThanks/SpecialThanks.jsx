@@ -1,5 +1,8 @@
 import styles from "./SpecialThanks.module.css";
 
+import { FaLinkedin } from "react-icons/fa6";
+
+
 export default function SpecialThanks() {
   return (
     <section id="special-thanks" className={styles.specialThanks}>
@@ -9,9 +12,12 @@ export default function SpecialThanks() {
           Special Thanks
         </h2>
 
+
         <div className={styles.content}>
 
+
           {/* IMAGE */}
+
           <div className={styles.imageBox}>
 
             <img
@@ -19,9 +25,11 @@ export default function SpecialThanks() {
               alt="Yosef Mekonen Tesfay"
             />
 
+
             <h3>
               Mr Yosef Mekonen Tesfay
             </h3>
+
 
             <p>
               My Uncle & Biggest Supporter
@@ -32,15 +40,20 @@ export default function SpecialThanks() {
               href="https://www.linkedin.com/in/yomeko/?skipRedirect=true"
               target="_blank"
               rel="noreferrer"
+              aria-label="Yosef Mekonen Tesfay LinkedIn"
             >
-              LinkedIn Profile
+              <FaLinkedin />
             </a>
+
 
           </div>
 
 
+
           {/* TEXT */}
+
           <div className={styles.card}>
+
 
             <p>
               I would like to express my sincere gratitude to my uncle,
@@ -50,11 +63,13 @@ export default function SpecialThanks() {
             </p>
 
 
+
             <p>
               Your unwavering support has inspired me to keep learning,
               overcome challenges, and become a better developer.
               I truly appreciate everything you've done for me.
             </p>
+
 
 
             <blockquote>
@@ -63,9 +78,12 @@ export default function SpecialThanks() {
             </blockquote>
 
 
+
           </div>
 
+
         </div>
+
 
       </div>
     </section>
