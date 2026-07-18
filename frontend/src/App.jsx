@@ -9,6 +9,7 @@ import Blog from './components/Blog/Blog.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Certificates from './components/Certificates/Certificates.jsx'
+import SpecialThanks from "./components/SpecialThanks/SpecialThanks";
 
 export default function App() {
 
@@ -38,6 +39,8 @@ export default function App() {
         <Portfolio />
 
         <Blog />
+
+        <SpecialThanks />
 
         <Contact />
 
