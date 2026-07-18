@@ -16,6 +16,9 @@ export default function Blog() {
             <p>
               {blog.journey}
             </p>
+            <p>  Date : 17 /7/2026 GC</p>
+
+
           </div>
           <div className={styles.imageBox}>
        <img

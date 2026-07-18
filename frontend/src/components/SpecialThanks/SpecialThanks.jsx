@@ -19,7 +19,7 @@ export default function SpecialThanks() {
             />
 
             <h3>
-              Yosef
+             Mr  Yosef  Mekonen
             </h3>
 
             <p>
@@ -33,7 +33,7 @@ export default function SpecialThanks() {
 
             <p>
               I would like to express my sincere gratitude to my uncle,
-              <strong> Yosef</strong>, for believing in me and supporting my journey.
+              <strong> Yosef Mekonen</strong>, for believing in me and supporting my journey.
               Thank you for your time, encouragement, dedication, and the
               opportunities you've given me to learn and grow.
             </p>

@@ -105,7 +105,7 @@ export default function Contact() {
           onClick={() => setOpen(true)}
         >
           <Send size={18}/>
-          Let's Connec
+          Let's Connect
         </button>
 
         <div className={styles.cards}>
