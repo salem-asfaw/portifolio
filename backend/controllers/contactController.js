@@ -21,23 +21,27 @@ exports.sendContactEmail = async (req, res) => {
     );
 
     // Send email
-    await transporter.sendMail({
-      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
-      replyTo: email,
-      subject: "New Portfolio Contact Message",
-      html: `
-        <h2>New Contact Message</h2>
+    await transporter.emails.send({
 
-        <p><strong>Name:</strong> ${name}</p>
+  from: "onboarding@resend.dev",
 
-        <p><strong>Email:</strong> ${email}</p>
+  to: process.env.EMAIL_USER,
 
-        <p><strong>Message:</strong></p>
+  subject: "New Portfolio Contact Message",
 
-        <p>${message}</p>
-      `,
-    });
+  html: `
+    <h2>New Contact Message</h2>
+
+    <p><strong>Name:</strong> ${name}</p>
+
+    <p><strong>Email:</strong> ${email}</p>
+
+    <p><strong>Message:</strong></p>
+
+    <p>${message}</p>
+  `,
+
+});
 
     return res.status(200).json({
       success: true,
