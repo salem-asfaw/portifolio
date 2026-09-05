@@ -1,15 +1,14 @@
 import styles from "./Certificates.module.css";
 
 export default function Certificates() {
-  const certificates = [
-    {
-      title: "Full Stack Development",
-      place: "Evangadi Tech",
-      year: "2026",
-      certificate: "../../../public/img/certificate.png",
-    },
-  ];
-
+const certificates = [
+  {
+    title: "Full Stack Development",
+    place: "Evangadi Tech",
+    year: "2026",
+    certificate: "/img/certificate.png",
+  },
+];
   return (
     <section id="certificates" className={styles.certificates}>
       <div className={styles.container}>
