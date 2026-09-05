@@ -6,7 +6,7 @@ export default function Certificates() {
       title: "Full Stack Development",
       place: "Evangadi Tech",
       year: "2026",
-      certificate: "/img/certificate.png",
+      certificate: "../../../public/img/certificate.png",
     },
   ];
 
